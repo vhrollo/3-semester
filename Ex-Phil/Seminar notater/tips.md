@@ -1,0 +1,2 @@
+sokogskriv.no
+esiclopedia of phiolsophy
