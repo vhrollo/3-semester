@@ -56,3 +56,9 @@ print(pairs)
 
 analyzing this
 - Given that for every iteration a new pair is discovered, and the max number of pairs is $n^2$ ,  the inner im unsure about that
+
+Favors the side which "proposes":
+*"If the men’s preferences mesh perfectly (they all list different women as
+their ﬁrst choice), then in all runs of the G-S algorithm all men end up matched
+with their ﬁrst choice, independent of the preferences of the women."*
+
