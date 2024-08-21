@@ -62,3 +62,11 @@ Favors the side which "proposes":
 their ﬁrst choice), then in all runs of the G-S algorithm all men end up matched
 with their ﬁrst choice, independent of the preferences of the women."*
 
+strong and weak instabilities
+- strong instability is when both w and m prefer eachother over their current partner
+- weak instability includes strong, and if w prefers m over her current partner and m is indifferent
+# 1.2 Five Representative Problems
+- cleanly formulated problems
+
+#### Interval Scheduling
+ 
