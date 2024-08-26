@@ -7,7 +7,7 @@ Disse begrepene er sentrale for å danne et godt grunnlag for å forstå utfordr
 
 ### Definisjon av 'psykiske lidelser'
 
-"Psykiske lidelser" kan defineres som en rekke sykdommer og tilstander som kan påvirker en persons adferd, tanker, følelser, og funksjonsevnene på en måte som reduserer livskvaliteten, den sosiale evne, og andre viktige livsomoråder gjennom ubehag. 
+"Psykiske lidelser" kan defineres som en "rekke sykdommer og tilstander som kan påvirker en persons adferd, tanker, følelser, og funksjonsevnene på en måte som reduserer livskvaliteten, den sosiale evne, og andre viktige livsomoråder gjennom ubehag". 
 
 Dette begrepet er et veldig stort samlebegrep, noe som gjør det viktig å inkludere de riktige "gruppene"/"kategoriene". Den er bred nok til å inkludere lidelser som angst, og depresjon, til andre mer alvorlige lidelser.
 
@@ -15,7 +15,7 @@ Definisjonen er utformet slik at det er mulig å vurdere om en tilstand hos et i
 
 ### Definisjon av 'mestring'
 
-"Mestring" kan defineres som evnen til å håndtere, beherske, og tilpasse seg utfordringer, som fra daglige oppgaver eller oppgaver som krever kompeteanse og ferdigheter, til mer omfattende situasjoner som stress, og sykdom, ved hjelp av egne evner og ressurser, stragegier, og sosiale støttesystemer.
+"Mestring" kan defineres som "evnen til å håndtere, beherske, og tilpasse seg utfordringer, som fra daglige oppgaver eller oppgaver som krever kompeteanse og ferdigheter, til mer omfattende situasjoner som stress, og sykdom, ved hjelp av egne evner og ressurser, stragegier, og sosiale støttesystemer".
 
 Dette begrepet handler om å hådtere situasjoner på, noe som gjøre det viktig å presisere hva situasjoner og hvordan en håndterer det. Dette begrepet inkluderer forskjellige eksempler som inkluderer alt fra smålige situasjoner av omfattende, til daglige sistuasjoner. Det inkluderer hverdagen, som gjør at vi kan bruke hverdags mestring.
 
