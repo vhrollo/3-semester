@@ -32,3 +32,34 @@ lower bound
 tight bounds
 - If both Big O and Omega is alike, then the asymptotically tight bound would be just that
 - $T(n) = pn^2 + qn + r$ is both $O(n^2)$ and $\Omega(n^2).$ then $\Theta(n^2)$
+
+- transivity holds
+	- g is upperbounded by h, and h is upperbounded by f
+	- g is upperbounded by f
+
+- f is tight(g) and g is tight(h), then f is tight(h)
+
+### Asymptotic bounds for some common functions
+
+Polynomials
+- $n^2$    også $n^{\frac{1}{2}}$ 
+- Using the heighest polynomials in the O()
+- If an algorithm has running time O(n log(n)) would also have a running time of O(n^2), therfore polynomial
+
+Logarithms
+- $log_a n = \frac{log_b n}{log_b a}$
+- the base of logarithm is not needed. Notice that $\frac{1}{\log_b a}$ is just a constant, because it only depends on the bases a and b, not on n. therefore each logarithmic growth is just multiplied by a constant factor
+
+Exponentials
+- An **exponential function** is of the form $f(n) = r^n$, where r is a constant base and r>1.
+- $n^d = O(r^n), r>1,  d>0$ 
+- This means that every exponential function grows faster than any polynomial function as n becomes large. In other words, no matter how large d is, eventually $r^n$ will outgrow $n^d$ because the exponential function grows much faster.
+- $r^n≤c⋅s^n$
+	- there is no c where $s^n$ is true for all sufficiently large n
+
+# A survey of common running time
+- Computing maximum O(n)
+
+
+#### O(n log(n))
+- It is the running time of any algorithm that splits its input into two equal-sized pieces, solves each piece recursively, and then combines the two solutions in linear time.
