@@ -14,3 +14,5 @@
 
 ### sansing og handling
 - Sensorer og aktuatorer
+
+
