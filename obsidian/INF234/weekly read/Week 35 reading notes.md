@@ -63,3 +63,34 @@ Exponentials
 
 #### O(n log(n))
 - It is the running time of any algorithm that splits its input into two equal-sized pieces, solves each piece recursively, and then combines the two solutions in linear time.
+- Mergesort
+
+$O(n^k)$
+
+# Data structure for implementing a priority queue
+- The definitions of heaps
+	-  for every element v, at a node i, the element w it i's parent satisfies $key(w) \leq key(v)$
+
+
+
+
+# Graphs
+- path undirected path
+- cycle - path taht starts and ends at the same vertex with no other repeated vertices or edges
+- curcuit - path that starts and ends at the same vertex with no repeated edges
+- hamilton circuit - circuit that touches every node
+- eularian circuit - circuit that thouches every edge
+- connected - no loners
+- in a directed graph, a strongly connected graph has for every two nodes, there is a path between u and v, and vice verca
+- Trees
+	- tree if it is strongly connected, and contain no cycle
+
+
+### 3.3 
+- wtih at most one edge between a pair of nodes
+- m can at most be $\binom{n}{2} \leq n^2$  given n nodes
+- connected graphs must have $m \geq n-1$ 
+- Running time of O(m + n) is the same as O(m)
+- adjeceny matrix is bad, given that we have to check what edges are present
+
+- adjacency list works better for sparse graphs
