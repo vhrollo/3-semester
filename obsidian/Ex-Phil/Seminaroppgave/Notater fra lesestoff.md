@@ -38,12 +38,36 @@ Teori
 
 **4. Check for a fourth one**
 - Lorem ipsum dolor, 
-Argumenter
 
 20-
+- Ende Gelande meaning here an no further
+- Winning a gas pipe there, and a coal plant scrapped there
 
-Ende Gelande meaning here an no further
-Winning a gas pipe there, and a coal plant scrapped there
+- Malm describes how the climate movement has remained committed to non-violence, avoiding physical force or property destruction even in the face of intense police aggression, as seen in a 2018 protest in Groningen, Netherlands.
+- This restraint, while maintaining public sympathy and allowing mass participation, has also limited the movement's ability to escalate its tactics. The "action consensus" among activists strictly prohibits damaging infrastructure, even when faced with aggressive opposition.
+- The non-violent approach has conferred tactical advantages, such as keeping the movement accessible and gaining public and media support. The movement’s peaceful nature has prevented it from being labeled as extremist or terrorist.
+- However, Malm questions whether this strict non-violence will be sufficient to stop fossil fuel extraction and whether the movement should consider more aggressive tactics if peaceful methods fail.
+
+- Continued investments in oil, hydro and coal even after the protests
+
+- The IEA noted a "growing mismatch" between these investment trends and the goals of limiting global warming to 1.5°C or 2°C. This highlights a fundamental disconnect between the capitalist economy, which continues to invest heavily in fossil fuels, and the urgent need to transition to renewable energy to prevent climate catastrophe.
+
+- https://www.nature.com/articles/s41586-019-1364-3
+
+- A 2019 study published in _Nature_ highlights the rapid and unprecedented expansion of long-lived fossil-fuel-based energy infrastructure in recent decades. Despite global climate goals, the fossil fuel industry has continued to grow, with nearly half of all operating fossil fuel units having been commissioned after 2004.
+
+- Long-Term Commitments: Fossil fuel investments are designed to operate for decades, making it economically difficult to dismantle them. These "committed emissions" lock in high levels of CO2 for the foreseeable future.
+
+- State and Capital Collaboration: Fossil fuel industries are closely supported by states, making it hard for the climate movement to challenge or disrupt these entrenched systems.
+
+- Studies show that the emissions from current and planned fossil fuel infrastructure will exceed the carbon budget necessary to keep global warming below 2°C, with coal infrastructure alone being enough to crash this limit.
+	- source?
+
+- Investment confidence
+
+Argumenter
+
+
 
 Eksempler
 - Klima
