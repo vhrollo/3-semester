@@ -54,3 +54,4 @@
 		- Noen ganger kan selve argumentet være en grunnleggende norm
 			- 
 	- Ulike krav til holdbarhet og relevans
+	- styrker forrige argument på en høyere nivå innen normer
