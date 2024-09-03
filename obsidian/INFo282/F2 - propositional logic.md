@@ -1,0 +1,6 @@
+- A formal languages will help to avoid ambiguities
+- unary (takes in one input)
+- dyadic (takes in to inputs)
+- not andor
+- right associative 
+	- p -> (q->r)   <->   p -> q  -> r

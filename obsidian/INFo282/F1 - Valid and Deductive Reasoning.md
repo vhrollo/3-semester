@@ -50,5 +50,4 @@ Deductive reasoning, abstractly
 	- B entails C, and A entails B, then A entails C
 - Monotonicity
 	- $.... \models C$ is the same as $...A...\models C$ 
-
-
+	- specifically in deductive reasoning
