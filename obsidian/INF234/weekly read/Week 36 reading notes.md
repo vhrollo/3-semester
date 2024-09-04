@@ -1,4 +1,4 @@
-# 3.4
+******************# 3.4
 bipartite graph
 - two sets where every edge can start in set V and end in set W
 - cannot have an odd cycle
@@ -47,4 +47,3 @@ Return the set A as the set of accepted requests
 	- Given that Greedy is always ahead for every step given the induction above, if a sol in O has one extra, A should also take it since it is always ahead, and will therefore always be able to take a new one
 - Interval partitioning
 	- The number of resources needed is at least the depth of the set of intervals
-	- 
