@@ -72,3 +72,12 @@ Proof by contradiction
 
 # Task 4
 
+Given a base case with n=1 box, the most optimal solution would be to send one truck, the greedy algorithm algorithm will fit the one box with one truck
+
+Inductive step:
+- We assume that the n boxes was sent in optimal full trucks
+- for the n+1 truck the algorithm will try to fit it in the current truck, if it doesn't fit, the truck is optimally full, there is no better way to do the boxes.
+- That is what is meant by staying ahead
+	- Maximum number of boxes is sent as early as possible
+- An optimal solution is just a solution 
+- Therefore the $T_{greedy} \leq T_O$
