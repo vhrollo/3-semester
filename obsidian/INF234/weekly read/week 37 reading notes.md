@@ -28,3 +28,4 @@ u ∈ S, the path Pu is a shortest s-u path.
 		3. it then  updates its neighbor if a shorter distance is found
 
 # 4.5 Minimum Spanning tree
+

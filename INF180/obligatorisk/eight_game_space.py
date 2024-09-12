@@ -79,7 +79,7 @@ class EightGameSpace:
         makes a list of paths that are new paths based on the astar_path
         only generates new paths if last node is not visited
         adds the last node of the path to the visited set
-        :param astar_path: the path to add new paths for
+        :param astar_path: the path to add new paths 
         :return: the set of new paths
         '''
         new_paths = []
