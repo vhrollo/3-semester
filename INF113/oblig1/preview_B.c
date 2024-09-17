@@ -49,7 +49,6 @@ void preview(const char *filepath, int n) {
         putchar(ch);
     }
 
-    printf("\n");
     
     fclose(file);
 }
@@ -61,6 +60,11 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     int n = atoi(argv[2]);  // atoi() converts a string to an integer
+
+    if (n == 0) {
+        printf("Usage: %s <filepath> <output_lines>\noutput_lines should be integer and larger than 0.\n", argv[0]);
+        return 1;
+    }
 
     preview(argv[1], n);
     return 0;
