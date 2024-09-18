@@ -92,3 +92,77 @@ A binary tree in which every internal node has two children. The leaves are labe
 Encoding of a symbol give a tree T is the label  of the edges on the lavel of the edges on the path from the root to the symbol.
 - The encoding from T is prefix free
 - Because any prefix of an code corresponds to a path from the root to an internal node in the tree, where not a symbol
+****
+
+**Huffman codes**
+- Encode ( compress ) mesage using variable-length encoding
+- How to create prefix-free codes
+	- using binary tree with the leaves as the corrosponding symbols
+
+Suppose that the alphbet is $\Sigma$, and $f_\sigma$ for the frequency of $\sigma$ in the message
+Let $\gamma : \Sigma \rightarrow B^*$. 
+Let $|\gamma (\sigma) |$ be the length of $\sigma$'s code
+Note: If our message  M has length n, then $n \cdot f_\sigma$ is the number where $\sigma$ appears in message M.
+$n \cdot f_\sigma \cdot |\gamma (\sigma)| \rightarrow$ how much $\sigma$ contributes to the total length of the message 
+
+Total encoding length:
+
+$\sum_{\sigma \in \Sigma} \cdot f_\sigma |\gamma (\sigma) | = n \cdot \sum_{\sigma \in \Sigma} \cdot f_\sigma |\gamma (\sigma)|$
+Avarage bit length: 
+$\sum_{\sigma \in \Sigma} \cdot f_\sigma |\gamma (\sigma)|$
+
+Encoding:
+- input Alphabet Sigma, $f_\sigma$ frequceies
+- output: encoding of Sigma that minimizes avarage bit length
+
+Expansion for finding a prefix tree minimizing
+- $\sum_{\sigma \in \Sigma} \cdot f_\sigma \cdot depth(\sigma)$
+
+Def. 
+- A full binary tree is a tree in which every node has children/degree in {0,2}
+
+Claim: A binary tree represents an optimal ... in a ufll tree. 
+
+Proof: Suppose that T has a role node with 1 child. Let $\sigma$ be some symbold corresponding to a elaf under that node. Contrary the degree 1-edge decreases the exeding of $\sigma$, and does not somehting after ...
+
+
+Lemma if fx< fy then depthT(x)$\geq$ depthT(y) for an optimal tree T
+Proof. Suppose fx < fy & depthT(x)< depthT(y)
+- The cost of T is
+	- ABL(T)=$\Sigma$ fs ds = S
+	- ABL(T')=S-fxdx - fydy + fxdy + fydx
+	- S - $\epsilon$  < ABS(T) = S
+
+Alg (Huffman)
+priority queue Q = {(f_v, v): $v \in \Sigma$}
+while $|Q| \geq 2$:
+	$v_1, v_2 = pop(Q), pop(Q)
+	create node (f_1 + f_2, (v_1, v_2))
+	push (Q, v)
+	return pop(Q)
+
+
+# Divide & Conquer
+
+Suppose we spend T(n) on sorting a list of n, with merge sort
+$T(n) = O(n)+O(n)+T(\frac{n}{2}) + T(\frac{n}{2}) + O(n)$ 
+Recurrence relation
+$T(n) = 2T(\frac{n}{2})+O(n)$
+base case
+$T(1)=T(0)=1$ 
+
+**Recurrence relation**
+$cn \rightarrow \frac{cn}{2} + \frac{cn}{2}$
+each level in the binary tree is cn big
+ This etnries tree tells us how much work we much do in each node in each level, cn in total
+Total work:
+- $cn \cdot log(n)$
+
+
+Lemma: Any algorithm with reacurence $T(n)=2T \frac{n}{2} + O(n)$ has the running time of O(n log(n))
+- $T(n) = aT(\frac{n}{b} + nd)$
+
+**Binary search**
+$T(n) = cT(\frac{n}{2}) = T(\frac{n}{2}) + O(1)$
+
+Lemma: An algorithm with recursion $T(n) = T(\frac{n}{2}) + c$  has running time of O(logn)
