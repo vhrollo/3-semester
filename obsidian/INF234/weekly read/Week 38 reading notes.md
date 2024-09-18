@@ -43,3 +43,27 @@ Why does this work?
 
 ## Huffman Codes and Data Compression
 
+
+
+## 5.1 Divide & Conquer: merge sort and recurrence relations
+*Simply divide the task into smaller tasks, and then solve each smaller task, and then combine them for the overall solution*
+
+- Merge sort: statically divide & conquer
+- Quick sort: dynamically divide & conquer
+
+**Unrolling the Mergesort Recurrence**
+- each level takes $n/2^j$ time, which makes the total which makes every level contribute $2^j(cn/2^j)$ 
+- summing over the levels of recursion  that takes $log_2(n)$ time
+- Bounded by $O(n\cdot log(n)$ 
+
+**Substituting a Solution into Mergesort Recurrence**
+
+**An Approach Using Partial Substitution**
+- $T(n)\leq k\cdot n\cdot log_b(n)$
+- $T(n)\leq 2k\cdot (\frac{n}{2}) log_b(\frac{n}{2}) +cn$ 
+- $T(n)\leq kn \cdot log_b(\frac{n}{2}) +cn$ 
+- Using b = 2
+- $T(n)\leq kn \cdot (log_2(n)-1) +cn$
+- $T(n)\leq kn \cdot log_2(n) -kn +cn$
+- $kn \cdot log_2(n) -kn +cn \leq k\cdot n\cdot log_b(n)$
+- therfore k has to be equal or less than c
