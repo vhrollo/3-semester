@@ -64,3 +64,58 @@ So if you want the higher median, you would use the same but n // 2, which would
 
 
 ### Task 3
+``` python
+def find_majority_class(A: list):
+    def recurisive_step(A: list):
+        length = len(A) 
+        i = 0
+        els = []
+        for i in range(0, length, 2):
+            j = i + 1
+            if j == length: 
+                els.append(A[i])
+                break
+            if A[i] == A[j]:
+                els.append(A[i])
+        return els
+
+
+    o = A.copy()
+    o_l = len(A)
+
+    while len(A) > 1:
+        A = recurisive_step(A)
+    
+    if not A:
+        print("There is not majority element in list")
+        return;
+
+    counts = [ (o.count(maj), maj) for maj in A]
+    count, val = max(counts)
+    print(counts)
+    if count > o_l//2:
+        print(f"The majority element is: {val}")
+    else:
+        print("There is not majority element in list")
+
+elements = [2,1,2]
+
+majority_els = find_majority_class(elements)
+
+```
+
+This works in tree steps:
+
+It will first pairwise check every element, and it will remove elements which are not equal. For every equal one, one of its elements will be passed down to a new list.
+
+So worst case scenario for this will be that all pairs are equal, and therefore it will only half, instead of getting less passed down
+
+This will happen recursively until there is either two or one card left, just check that the two cards are different
+
+One of these two cards really doesnt have to be the majority card, so therefore we have to compare each to all elements in the first list. If one of these are the majority we can safely give out the majority card.
+
+Pairing up elements and comparing them: O(n)
+Recursivlely doing this ^ where we at worst case scenario half O(log(n))
+In the end check if the card is majority (O(n))
+
+Total: $O(n\cdot log(n) + n)\approx O(n\cdot log(n))$  
