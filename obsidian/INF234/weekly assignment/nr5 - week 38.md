@@ -13,3 +13,54 @@ Then traverse down the tree and do the same
 
 we could also just check the biggest $\mathcal{L}_e$ inlcuding each of the nodes child, and a adjust just one of them to match the other, with the edges from parent to children. Then do this recurivly
 ## Task 2
+
+```python
+def find_median_sorted_arrays(A, B):
+    def median_recursive(A, B, a, b, n):
+        print(f"n:{n}")
+        #if n == 1:
+        #    print("this will never happen")
+        #    return min(A[a], B[b])
+        if n == 2:
+            return (max(A[a], B[b]) + min(A[a + 1], B[b + 1])) / 2.0
+
+        k = (n - 1) // 2
+        print(f"k: {k}")
+        midA = A[a + k]
+        midB = B[b + k]
+        if midA > midB:
+            #if you just want the min of the two median values
+            #add b + k + 1 and n - k - 1
+            # this will reach n == 1 as well
+            return median_recursive(A, B, a, b + k, n - k)
+        else:
+            return median_recursive(A, B, a + k, b, n - k)
+    
+    n = len(A)
+    return median_recursive(A, B, 0, 0, n)
+
+# Example usage:
+A = [1, 2, 3, 4, 5, 11]
+B = [6, 7, 8, 9 ,10, 12]
+median = find_median_sorted_arrays(A, B)
+print("The median is:", median)
+
+#Output:
+#n:6
+#k: 2
+#n:4
+#k: 1
+#n:3
+#k: 1
+#n:2
+#The median is: 6.5
+```
+
+
+Since n2 is always a even value, it would always be the mean of the two center values, and never a whole number, since every value is unique.
+Given that the lower median is always the biggest value which could be in the (n-1)//2 position, it will always stay in the lists. 
+
+So if you want the higher median, you would use the same but n // 2, which would always compare the upper one, this will be the opposite effect of the one over and you would have to max it
+
+
+### Task 3
