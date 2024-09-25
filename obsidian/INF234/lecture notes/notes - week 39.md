@@ -108,3 +108,119 @@ work done per node $(\frac{n}{b^j})^d$
 
 In total: $T(n) = \sum^{log_bn}_{j=0} c\cdot a^j (\frac{n}{b^j})^d$ = $cn^d \sum^{log_b(n)} (\frac{a}{b^d})^j$ 
 
+
+# Integer Multiplication
+*In: A, B*
+*Out: A times B*
+
+Assume that |x|=|y| is a power of 2.
+
+$|x|=|y| \in \{0,1,2,4,8,16\}$
+
+$x = 123 \Rightarrow 0123$
+
+$x = x_1 \cdot 2^{n/2} + x_0$
+
+It is not multiplying, but it is only bit-shifting. It is the same as adding 0s at the end of the n
+
+$x\cdot y = (x_1 \cdot^{n/2} + y_0)\cdot(y_1 \cdot^{n/2} + y_0)$
+$2^nx_1y_1 + 2^{n/2}(x_1y_0 + x_0y_1) +x_0y_0$ 
+
+
+**Karatsuba's algorithm (1962)**
+$P = (x_1 + x_0)(y_1 + y_0)$
+	$= x_1y_1+ x_1y_0 + x_0y_1 + x_0y_0$
+	$A = x_1y_1$
+	$B = x_0y_0$
+
+$P = A + x_1y_0 + x_0y_1 + B$
+$P - A - B = x_1y_0 + x_0y_1 = S$
+$2^nA+ n^{n/2}(x_1y_0 + x_0y_1) + B$
+
+$T(n) \leq 3T(n/2)+O(n)$
+$O(n^{log_23}) = O(n^{1.59})$ 
+
+
+# Counting Inversions
+*in: list of itnergers L*
+*out: number of pairs taht are inverted i, j s.l i< j ,b but L\[i] > L\[j]*
+
+Social choice thoery
+Clustering on counting inversions
+
+**Observe**
+- We can have $\Omega (n^2)$ many inversions
+**Corollary**
+- counts using count +=1
+- it runs in the $\Omega (n^2)$.
+
+```psudo
+Count(L):
+	inv_1 = count(L_1)
+	inv_2 = count(L_2)
+	count(L_1, L_2)	
+```
+
+Basically merge to check of inversions in the L_1 and L_2 lists given that L_1 and L_2 is sorted
+
+```python
+def sort_and_count(L):
+	if len(L) =< 1: return (0, L)
+	inv_1, L_1 = sort_and_count(L[:len(L)//2])
+	inv_2, L_2 = sort_and_count(L[len(2)//2:])
+	p_1 = p_2 = 0
+	L = [0]
+	count = 0
+	while p_1 < len(L_1) and P_2 < len(L_2):
+		if L_1[p_1] < L_2[p_2]:
+			L.append(L_1[p_1])
+			p_1 += 1
+		else:
+			count += len(L_1)-P_1
+			L.append(L_2[p_2])
+	return (inv_1 +inv_2 + count, L + L_1[p_1:], + L_2[p_2:])
+```
+
+
+# Closest pair 
+*input: set of points in the plane*
+*output: A pair with minimum distance*
+
+The closest pair is either full
+
+def closest pair(P):
+	L =P\[:n/2] 
+	R = p\[n/2:]
+	D_L = closest_pair(L)
+	D_R = closest_pair(R)
+	d = mm(d_L, d_R)
+	S={all pairs s away for x}
+	for i in range(len(S))
+		F = \[i:i + somthing]
+		bruteforce(F)
+
+let $\delta = mm(\delta_L, \delta_R)$
+We need to find if there are
+	$P \in L, q\in R s.t$
+		dist(p,q)
+Observation. Let x be the dividing line between L and R
+If p and q are as above then p and q are $\leq \delta$ for away from x*
+
+Let S be all points at most $\delta$ for away from x* " S is the Strip"
+
+But: S can have sfsd $\Omega(n)$ so we count all pairs
+
+Suppose S is sorted by Y-coordinate
+	Claim. Let s_i be the ith element in S.
+		Let s_i and s_j be points in s
+		If |j-i| >7 then dist(s_i, s_j) > $\delta$
+
+
+**Proof**:
+1. Consider one box of size $\delta / 2$ and $\delta / 2$
+2. Obs. If a box  contains two points then they are closer then $\delta$ apart
+3. Any two points on the same side of x^s ahve dist $\geq \delta$
+4. If |j-i| > 7. then s_j is not in any box, hense s_j is at least $\delta$ away from s_j
+
+**Other**
+hence we can try every consecutive "windows" in S of side $\leq$ 8
