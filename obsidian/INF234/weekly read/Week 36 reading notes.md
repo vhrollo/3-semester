@@ -6,6 +6,16 @@ bipartite graph
 
 - stronly connected
 	- path from u, to w, and opposite
+\
+- Quotient Graph
+	- A graph whose vertices are blocks of a partition of vertices which are strongly connected, and
+	- ![[Pasted image 20240925100314.png]]
+- Strongly connected component
+	- A bulk of vertices which is strongly connected
+
+- bigraph
+	- graph which is directed
+
 
 # 3.6 DAG
 - A very common structure in computer science, because many kinds of dependency networks of the type.
