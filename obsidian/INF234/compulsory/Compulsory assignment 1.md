@@ -24,3 +24,20 @@
    Therefore we can conclude that the condensation graph of a digraph has to be DAG.
    
 # 3. Greedy stuff
+1. 
+```python 
+def change(coins: dict, value) -> dict:
+	coins = sorted(coins.items(), key=lambda x: x[0], reverse=True)
+	change_dict = {}
+	num = 0
+	for v, i in coins:
+		num = min(i, value//v)
+		value -= v * num
+		change_dict[v] = num
+	return change_dict
+```
+
+2. When using \{1,4,5,10} and a number like 8 the greedy algorithm will choose {5: 1, 1: 3} instead of {4:2}
+3. Very intuitively i i think of a situation where the only edge to node s is also the most expensive one. Then to span the whole tree, that edge has to be included. More formally Prims algorithm doesn't stop before all nodes is taken, this would mean a worst case scenario, as it would always try to search the  lowest available edges first. As for Kruskals, since this is the only edge that is connected to node s, and that means that it cant make a cycle, which means that it will add it when it comes to it.
+   
+   When you have a cycle of $v_1, v_2, ...v_n$ only e-1 cycles is needed to span all vertices. We can proof that the most expensive edge is always the one that is left out with an contradiction. If the most expensive edge is chosen, 
