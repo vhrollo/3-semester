@@ -170,7 +170,7 @@ Basically merge to check of inversions in the L_1 and L_2 lists given that L_1 a
 def sort_and_count(L):
 	if len(L) =< 1: return (0, L)
 	inv_1, L_1 = sort_and_count(L[:len(L)//2])
-	inv_2, L_2 = sort_and_count(L[len(2)//2:])
+	inv_2, L_2 = sort_and_count(L[len(L)//2:])
 	p_1 = p_2 = 0
 	L = [0]
 	count = 0
@@ -180,6 +180,7 @@ def sort_and_count(L):
 			p_1 += 1
 		else:
 			count += len(L_1)-P_1
+			# does this bc we always remove the smalllest
 			L.append(L_2[p_2])
 	return (inv_1 +inv_2 + count, L + L_1[p_1:], + L_2[p_2:])
 ```
