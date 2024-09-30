@@ -24,7 +24,7 @@ Kontroaktteori
 **Extiction Rebellion**
 - viktig i ooppgaven
 
-**Thomas Hobbes**
+# **Thomas Hobbes**
 - Mekanistisk forståelse
 - 15-16 var relgionskriger
 - frykt
