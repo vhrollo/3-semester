@@ -72,14 +72,42 @@ print(longest_path(5, edges))
 
 
 # Task 3
+- $dp[i] = \max_{0\leq j < i}(dp[j] + quality(y[j:i]))$ , where the maximum at at each e3
 
-Least segmentation problem
+finds the best split given a n in the string, it will then check what the left side would be, but we have already calculated it as we go form left to right.
 
-- Input: $(x_1, y_1),(x_2, y_2),...,(x_n, y_n)$
-- output: A segmentation (cnotiguous partitioning)
-- $S_1, S_2, ..., S_5$ 
-- Such that 
-- $ct+\sum_{i=1}^terror(S_i)$ is minimized
+so you would more efficiently need to have a prev split to find the best given split if you want the word in the end, then just backtrack in it
+```python
+def segment_word(word: str, word_dict: dict):
+    n = len(word)
 
-- $opt[n] = min J<n \{ c+ error(PjiPjn, Pn), +opt[i-1]\}$
-- 
+    dp = [-float('inf')] * (n + 1)
+    dp[0] = 0
+    prev = [-1] * (n + 1)
+
+    for i in range(1, n + 1):
+        for j in range(i):
+            if word[j:i] in word_dict:
+                quality = word_dict[word[j:i]]
+            else:
+                quality = -5
+
+            if dp[j] + quality > dp[i]:
+                dp[i] = dp[j] + quality
+                prev[i] = j
+
+    segments = []
+    i = n
+    while i > 0:
+        j = prev[i]
+        segments.append(word[j:i])
+        i = j
+
+    segments.reverse()
+    return segments, dp[n]
+
+word = "iamaboy"
+word_dict = {'i': 1, 'am': 5, 'a':2, "boy": 3}
+segmentation, total_quality = segment_word(word, word_dict)
+print(segmentation, total_quality)
+```

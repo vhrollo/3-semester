@@ -25,4 +25,6 @@ Catepillar tree
 - $ct+\sum_{i=1}^terror(S_i)$ is minimized
 
 - $opt[n] = min J<n \{ c+ error(PjiPjn, Pn), +opt[i-1]\}$
-- 
+
+
+per iteration find the most optimal split for a given j which is between 0< j < i
