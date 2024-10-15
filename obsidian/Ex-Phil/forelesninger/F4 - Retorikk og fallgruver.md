@@ -61,6 +61,12 @@ Autoritetsargumenter
 Personargumentasjo
 - direkte
 
+Trusselargument
+- trussel
+
+spådom
+- du styrer ikke det
+
 Andre fallgruver
 - kausal feilbeslutning
 	- korrelasjon impliserer ikke (uten videre) årsak
@@ -72,3 +78,7 @@ Andre fallgruver
 	- påviser til evalusjonære trekk
 - stråmannsargument
 	- feilaktig framstilling
+
+
+Inventio
+- argument bassert på gruppe du snakke til

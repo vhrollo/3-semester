@@ -64,8 +64,105 @@ Teori
 	- source?
 
 - Investment confidence
+	- if an investment is made in fossil fuel, it wont pay off for a while, meaning the investor want this to stay like this 
+	- and when money come, they want it to stay like this as long as possible
+	- pipeline should stay intact for 40 years ish
+	- committed emissions
+		- infrastructure which investors want to keep running until its end
+		- this will definitely drag us above 1.5, and with proposed plasns this will drag us above 2.0 
+		- Incumbent coal infrastructure will drag us over
+
+- the tension between climate action and pacifism
+	- pacifism may sometimes fail to prevent suffering.
+	- a pacifist who makes 
+
+- McKibben
+	- a leading climate activist who is the driving force behind a lot of campains
+	- the idea of turning the other cheek, of taking on unearned suffering
+		- bibal saying: respond to violence with non-violence and forgivenss rather than retaliation. symbolizes a broader approch of pacifism
+
+- Moral and Strategic Pacifism
+	- Moral pacifism is described as a commitment to enduring suffering without retaliation
+		- Ghandi - salt march
+	- Strategic pacifism, on the other hand, is considered as a calculated tactic that avoids violence because it is often counterproductive and detracts from the movement's goals.
+		- sit-ins and so on, Martin Luther King Jr.
+- Violence
+	- Destroys democracy relationsihps with oponents, womething which are vital to creating a peaceful outcome
+
+- "If you practice non-violence, you are more likely to succed" - unsourced
+
+- XR
+	- non-violent, it is a practical strategy to achieve political change
+	- Inspired by civil rights movements
+	- use of strategic pacifism
+	- effectiveness and moral clarity
+
+- Ghandi
+	- drove the british out of india, but also launced the attack on the legitamacy of colonialism around the world
+- The end of apartheid in South Africa after Nelson Mandela's release.
+- The revolt against Margaret Thatcher's poll tax in the UK, where ordinary citizens wrote letters, refused to pay, and even volunteered to go to jail.
+- The fall of Slobodan Milošević in Serbia and the toppling of Hosni Mubarak during the Egyptian uprising.
+
+- XR mentions this in one chapter
+	- non-violence is the royal road to achiving political goals.
+	- 
+
+- Violence
+	- João Pedro Marques, historian talked about how Blackburn's argument of slaves violent unrest led to the abolition of slavery
+
+- Suffragettes movement
+	- non-violent movement in uk which focused on womans rights.
+	- militants tactics when peaceful actions failed to yield results
+	- These were disruptions to force the goverment to act, epmhpasizing that a shift to more agressive methods was often necessary to bring real change
+
+- This questions the absolute commitment to XR to stay 100% non-violent
+
+Ghandi's philosophy of *Satyagraha* emphesizing non-cooperation, boycots, and civil disobedience. He urged Jews in Germany to practice non-violence, suggesting that voluntary suffering could be turn into spiritual act. 
+
+For many in the Civil Rights Movement, non-violence was not just a moral stance but a strategic tactic—more effective than armed struggle in achieving their goals. The author suggests that successful resistance often requires a combination of both non-violent protest and readiness for self-defense, challenging the idea that non-violence is always sufficient by itself.
+
+Martin Luther King Jr. threatened that violent forces would arrise if demands were not met.
+
+"radical flank effect" - Herbert H.
+- when a non-violent group threatens knowing that the other party know what some of its people can do
+- 
+Guirrilla groups
+- black panthers
 
 Argumenter
+
+Radical flank groups
+- Greta Thunberg = rosa parks
+
+ANC shifted towads armed struggle under hte leadership of nelson mandela after non-violent protest failed
+- Spear of the nation
+
+Strategic pacifism should move onto violence when it no longer works
+
+fossil fuel systems can be overthrown through stragegies similar to those used in pas liberation movements. 
+- fossil fuel interest are deeply embedded in contemporary capitalism, and dismantling them requires far more then political change
+
+civil resistance model was endores by movements like Extinction Rebellion
+- chenoweth and stephan
+- he critiques that non-violent is more likely too succeed than violent ones, as the ones who this is quoted from oversimplified all conflicts where she categorized them
+- they are overlooking the complexities of certain conflicts 
+- They do not acknowledge that in some struggles, like the resistance against isreali occupation by groups like hezmollah, armed or violent resistances played a significal role
+- It is wrong to have these historically situations side by side with climate crisis, they are not the same class of problem and what they are against
+
+Iran's 1979 used both violent and non-violent methods to achieve its goals.
+
+He says that the autocracies cannot be dismantled through non-violence alone, as more intense and coordinated actions may be required
+
+Egyptian Revolution of 2011 as an example where unarmed collective violence was a crucial role in removing the regime. Improvised weapons. Were not organized by military actions but spontaneous acts by ordinary people that disrupted civic order, creating an opportunity for regime change. The contrasts XR which will only use non-violence.
+
+Selective historical lens used by strategic pacifists like Chenoweth and Stephan
+- sanitizes history
+
+The author contends that this selective retelling is of limited use for tackling the climate crisis, which requires a more comprehensive understanding of how change is achieved.
+
+Understanding the dimension of the struggle. 
+
+The temporal urgency is different than suffragettes. Dire and accelerating
 
 
 
