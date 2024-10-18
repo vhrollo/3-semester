@@ -69,11 +69,11 @@ def change(coins: dict, value) -> dict:
 		- layers: $log_2(n)$
 		- $T(n)= cn^2 \sum_{j=0}^{log_2(n)} (5/4)^j = \frac{cn^2n^{log_2(5)}}{n^{log_2(4)}} = cn^{log_2(5)}$
 		- $O(n^{log_2(5)})$
-	-  $T(n)\leq 10T(n/2) + O(n\sqrt{n}) +13$ 
+	-  $T(n)\leq 10T(n/3) + O(n\sqrt{n}) +13$ 
 		- work per layer: $10^j$
-		- work per node: $c(n/2^j)^{1.5} + 13$
-		- layers: $log_2(n)$
-		- $T(n)= cn^{1.5} \sum_{j=0}^{log_2(n)} (10/2^{1.5})^j = \frac{cn^{1.5}n^{log_2(5)}}{n^{log_2(2^{1.5})}} = \frac{cn^{1.5}n^{log_2(5)}}{n^{1.5\cdot log_2(2)}} = cn^{log_2(10)}$
+		- work per node: $c(n/3^j)^{1.5} + 13$
+		- layers: $log_3(n)$
+		- $T(n)= cn^{1.5} \sum_{j=0}^{log_3(n)} (10/2^{1.5})^j = \frac{cn^{1.5}n^{log_3(5)}}{n^{log_3(2^{1.5})}} = \frac{cn^{1.5}n^{log_3(5)}}{n^{1.5\cdot log_3(2)}} = cn^{log_3(10)}$
 		- $O(n^{log_2(10)})$
 2. $T(n) \leq 2T(n/2)+cn$
 	- Base case
