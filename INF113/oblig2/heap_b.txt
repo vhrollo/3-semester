@@ -1,0 +1,8 @@
+# Task 2b
+Yes, we can confirm that a page is 4KB, as shown on the pmap-writeout,
+where each memory region is in 4KB multiples
+
+When malloc reservs memory, one page of 4KB is immediately sent to 
+RSS to set up metadata and structures for the virtual memory.
+
+In my case 12KB immediately allocated in RSS.

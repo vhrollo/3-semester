@@ -1,0 +1,19 @@
+# Task 2c
+
+I have around 2 GB of memory on this VM and when using free -h,
+i see that i have 1.9 GiB, where only 85 MiB is free. When running
+an iterative funcitin which increase 1 MiB at a time i reach
+1968 MiB before malloc returns NULL.
+
+When making repeated malloc calls with a large fixed size, the
+amount of memory allocated is limited by the systems virtual
+memory. 
+
+Without writing to memory, we only reserve virtual space. 
+When doing this on my 64 bit system, i allocated 27476GiB.
+This is roughly the same as 2^44 which makes sense as i am
+using a 64-bit system.
+
+When writing to each allocated block, memory is commited, and
+the program will crash earlier due to physical memory or swap
+space limits, resulting in segmentation fault.

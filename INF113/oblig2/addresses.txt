@@ -1,0 +1,10 @@
+=========
+0x401745  program code
+---------
+0x4ef000  heap start
+0x7ffff7ef8010  heap allocated
+---------
+ikke brukt
+---------
+0x7fffffffdd14  stack
+=========

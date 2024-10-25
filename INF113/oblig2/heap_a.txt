@@ -1,0 +1,18 @@
+# Task 2a
+First when we use our malloc we get the address 0x7ffff7c88010,
+and when we check the pmap on our pid we see the val with 1MB
+it will show the address 00007ffff7c88000. 16 bytes difference 
+as mentioned.
+
+The 16-byte offset between the address returned by malloc and 
+the start of the heap region in pmap contains metadata used by 
+malloc to track allocation size and status of the memory block.
+
+When we look at them, we will see:
+00 00 00 00 00 00 00 00 02 10 10 00 00 00 00 00
+
+We can se that this in little endian 0x00101002 will be around 1MB.
+This value will also have a alignment of 16.
+We requested 1024 * 1024 which is roughly 1.048MB, and we we got
+1.052MB, this could be alignment padding, where it rounds up on the
+last page (which is around 4kB as roughly is the difference).
