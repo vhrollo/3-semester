@@ -42,7 +42,7 @@ void bonkinator2() {
 
 
 int main() {
-    size_t allocation_size = 1024 * 1024; // Start with 1 MB increments
+    size_t allocation_size = 100 * 1024 * 1024; // Start with 100 MB increments
     char *ptr = NULL;
 
     //loop until malloc fails

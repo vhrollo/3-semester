@@ -1,9 +1,13 @@
 # Task 2c
 
-I have around 2 GB of memory on this VM and when using free -h,
-i see that i have 1.9 GiB, where only 85 MiB is free. When running
-an iterative funcitin which increase 1 MiB at a time i reach
-1968 MiB before malloc returns NULL.
+               total        used        free      shared  buff/cache   available
+Mem:           4.7Gi       2.5Gi       2.0Gi       419Mi       196Mi       2.2Gi
+Swap:            0B          0B          0B
+
+I have around 5 GB of memory on this VM and when using free -h,
+i see that i have 4.7 GiB, where only 2.2GiB is available. When running
+an iterative funcitin which increase 100 MiB at a time i reach
+2.25 GiB before malloc returns NULL.
 
 When making repeated malloc calls with a large fixed size, the
 amount of memory allocated is limited by the systems virtual
@@ -12,8 +16,13 @@ memory.
 Without writing to memory, we only reserve virtual space. 
 When doing this on my 64 bit system, i allocated 27476GiB.
 This is roughly the same as 2^44 which makes sense as i am
-using a 64-bit system.
+using a 64-bit system. I found on the internet that the addressable
+memory is 2^48, which could explain this number.
 
 When writing to each allocated block, memory is commited, and
 the program will crash earlier due to physical memory or swap
 space limits, resulting in segmentation fault.
+
+I wrote two different function where one (bonkinator) will 
+crash the machine through the first problem, and the second 
+(bonkinator2) will crash it through the second problem.
