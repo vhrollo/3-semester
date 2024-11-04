@@ -77,3 +77,7 @@ Arguments against breach of contract
     Myndighetenes forsøk på å balansere ulike interesser, som sysselsetting, økonomisk vekst og bærekraft, kan sees som en oppfyllelse av samfunnspakten fremfor et brudd på den. Det kan argumenteres for at en stat ikke nødvendigvis svikter sine borgere fordi den har andre interesser i tillegg til klimakamp, og at slike kompromisser er essensielle for et funksjonelt demokrati. Hobbes’ syn på samfunnets behov for autoritetsstyring kan her understøtte statens rett til å veie ulike hensyn mot hverandre for å sikre en viss grad av nasjonal stabilitet.
     
     I norsk sammenheng ser vi hvordan staten forsvarer investeringer i olje og gass som en måte å opprettholde økonomisk stabilitet, og peker på eksisterende demokratisk representasjon som en mulighet for borgerne til å påvirke klimapolitikken. Når staten opprettholder stabile institusjoner og prosesser for medbestemmelse, kan man hevde at borgerne har tilstrekkelig påvirkningskraft innenfor demokratiets rammer og derfor ikke har grunnlag for å ta i bruk ekstreme virkemidler.
+
+  
+
+ En slik handling vil være rettet mot rettferdighetssansen hos majoriteten av samfunnet og erklærer at samfunnets grunnleggende regler etter ens vurdering ikke blir respektert. (Rawls, 1999, s. 320)
