@@ -9,7 +9,6 @@ virkelighet - ting og forhold
 '...' markerer betydning
 
 Deskriptiv betydninger
-- 
 - klart sann/usann
 
 Normative betydninger
