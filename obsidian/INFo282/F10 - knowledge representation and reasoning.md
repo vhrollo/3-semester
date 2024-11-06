@@ -54,8 +54,11 @@
 	- decidable
 	- expressive enough
 
+
+$$Language - \mathcal{EL}$$
 - Take names for individuals ($N_I$), basic concepts ($N_C$) and roles ($N_R$).
 
+![[Pasted image 20241106225013.png]]
 ## Examples of Concepts
 
 - **$\top$**: all objects
