@@ -15,4 +15,4 @@
 - *Can arbitrary instances of problem Y be solved using a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves problem X?*
 - If yes then we write Y $Y \leq_P X$
 	- “Y is polynomial-time reducible to X”
-	- “X is at least as hard as Y (with respect to polynomial time).”
+		- “X is at least as hard as Y (with respect to polynomial time).”
