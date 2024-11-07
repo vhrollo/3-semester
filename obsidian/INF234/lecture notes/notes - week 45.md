@@ -138,3 +138,108 @@ Proof of claim:
 ### Clique
 - In: G, k
 - Out Does G have a clique of size k i.e a set of k verteices s.t all are freinds?
+
+---
+
+# Wednesday lecture
+
+
+**Def** (decision problem)
+	A problem $\Pi$ is a set of strings $\Pi \subseteq \sum^*$ 
+	An instance of $\Pi$ is a string in $s\in \sum^*$
+	An algorithm A for $\Pi$ is any procedure that solves this problem such that 
+	$$A(s) = \begin{align}
+	\text{yes if } s\in \Pi\\
+	\text{no if } s \not \in \Pi
+	\end{align}$$
+
+Example
+Input: $s-t-path. "(1,2,3), ((1,2), (2,3)), 1,3"$ 
+
+
+**Def** (certifier).
+- An algorithm C(s,t) is a certifier for problem $\Pi$ if for every string $s \in \sum^*, s \in \Pi$ if and only if there exists some $t\in\sum^*$ such that $C(s,t)=yes$ 
+- Example I.S s ="(1,2,3,4,5), ((1,2)...), k-3)", t = "(1,4,5)"
+
+- we call t as certificate( witness)
+
+**Def** (NP) 
+- NP is the set of decision problems for while there exists a polynomial time certifier
+	- C(s,t) runs in poly time is |s|+||t|
+	- certificate t has |t| is polynomial |s|
+- this only focuses on the yes instances, and as we cannot proove that the no-instances something
+
+
+
+### Lemma $P\subseteq NP$
+
+**Proof.** Let $\Pi P$. By definition, there is an algorithm A that decides $\Pi$. Let the certifier be $\epsilon$  and C(s,t)=A(s).
+- Polynomial problems doesn't need certifiers, as they already can just solve the problem in polynomial time
+
+P is a subset of NP,
+
+### free exam points
+**Def**. (NP-complete)
+- A problem Y is complete for NP if:
+	- $Y\in NP$ 
+		- Check if a solution is give, that it can be checked in polynomial time
+	- for every problem $X\in NP$
+		-  $X\leq_p Y$
+
+
+**Observation**. 
+- Suppose X is NP-complete, $Y \in NP$ and $X\leq_pY$
+- if you can reduce X to Y, then Y is NP-c
+	- Proof. Let $W\in NP$. then $W \in_p X$. Since $X\leq_pY$, by transitivity, $W\leq_pY$
+
+Recipe for establishing NP-completeness of Y:
+1. Show that $Y\in NP$ (by giving certifier)
+2. Pick some problem $X \in NP-c$
+3. Prove that $X\leq_p Y$
+
+The algorithm is more powerful than X, therefore 
+
+Task:
+Observation.
+	Suppose Y is NP-complete
+	Then $Y\in P$ if and only if P=NP
+
+
+### Theorem (Cook-Levin) - SAT in NP-complete
+
+
+
+### Satisfiability
+- Variables: $x_1, x_2, ..., x_n$
+	- Can be true($\top$) or false($\bot$)
+	- Literals: $x_i$ or $\neg x_i$ 
+	- Clause: A disjunction of literals
+		- $C_j= (x_1 \lor \neg x_2 \lor \neg x_3)$
+
+- CNF-formula is a conjunction of clauses
+- $\Phi = C_1 \land C_2 \land \dots \land C_m$ 
+
+- A truth assignment is a function d: $x_i \rightarrow \{ \top, \bot\}$
+	- The evaluation of $\Phi$ is the evaluation of its truth-value gives some assignment $\alpha$
+	- SAT
+	- input: $\Phi$, a cnf-formula 
+	- output: does there exist a satisfying assignment to $\Phi$, i.e a st $\Phi$ is evaluted to true
+
+	- The most effiecient algorithm will then be $O(2^n)$, which is just brute forcing the algorithm
+
+Theroem. SAT $\leq_p$ independent set
+- this will prove that independent set
+	- $\Phi$ transform to (G, k) -> yes/no, which then inv transform to phi
+	
+**Proof**. Gadget
+
+(for this proof we will assume that clauses of \Phi have 3 literals(3SAT))
+- Example: $\Phi = (\neg x_1 \lor x_2 \lor \x_3) \land \dots$
+
+For each clause C,
+- In (G,k), k = number of clauses.
+- We make a triangle, with each vertex as a literal. 
+	- we then make an edge between the vertexes with negated values x_1 and neg x_1
+
+Claim (g, k) is yes to I.S. $\Leftrightarrow \Phi$ is satisfiable
+- Let $S \subseteq V()
