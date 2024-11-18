@@ -83,4 +83,4 @@ getting rid of redundant information. In the example we are picking the maximum 
 
 - Dropout
 	- For each minibatch, randomly ignore part of the input and hidden units
-	- approx with bagged ensamble
+	- approx with bagged ensemble

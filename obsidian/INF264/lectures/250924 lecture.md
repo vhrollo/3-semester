@@ -82,14 +82,14 @@ output units
 
 **Minibatch stochastic gradient descent**
 - stochastic gradient decent 
-	- sample minipatch of m training examples
+	- sample minibatch of m training examples
 	- forward pass to compute loss
-	- backpropogate to change weights
+	- back-propagate to change weights
 	- update weights
 - minibatches
 	- minibatch is a often a power of 2
 	- small minibatch size regularizes ( 1 is usually too unstable)
-- Epock
+- Epoch
 	- one pass true the whole training data (n / m SGD steps)
 
 **What is deep learning**
