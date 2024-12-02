@@ -47,7 +47,8 @@ Genetisk
         - Gradually reduce this probability (temperature) over iterations.
         - Helps escape local optima early in the process.
     - Probability formula: $p = e^{\frac{\Delta f}{T}}$​ Where $\Delta f$ is the change in the objective function, and T is the temperature.
-5. **Beam Search**:
+	    - likelihood that you accept a worse 
+1. **Beam Search**:
     
     - Maintain a population of k solutions (beams).
     - At each step, explore neighbors of all current solutions and select the k best.
