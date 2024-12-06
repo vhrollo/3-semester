@@ -112,8 +112,8 @@ Avarage bit length:
 $\sum_{\sigma \in \Sigma} \cdot f_\sigma |\gamma (\sigma)|$
 
 Encoding:
-- input Alphabet Sigma, $f_\sigma$ frequceies
-- output: encoding of Sigma that minimizes avarage bit length
+- input Alphabet Sigma, $f_\sigma$ frequencies
+- output: encoding of Sigma that minimizes average bit length
 
 Expansion for finding a prefix tree minimizing
 - $\sum_{\sigma \in \Sigma} \cdot f_\sigma \cdot depth(\sigma)$
